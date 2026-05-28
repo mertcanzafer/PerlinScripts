@@ -1,6 +1,12 @@
-# BuildScript
-Helper bat file script for Perlin3D
+# PerlinScripts
 
-Converting jpeg/png format files to ktx2 format
+Helper batch and Python scripts used to simplify development workflows for the Perlin3D engine.
 
-Configures project with CMake
+## Features
+
+- **Build.bat**
+  - Converts texture files into `.ktx2` format for Vulkan texture usage.
+
+- **HardcodedJsonBuilder.py**
+  - Deserializes hardcoded source JSON files, processes their contents, and serializes the result into destination JSON files.
+  - Currently used for generating and updating texture registry data from mesh asset metadata.
