@@ -1,7 +1,7 @@
 import json
 
 def DeserializeJsonFile(fileName):
-    path = "files/" + fileName
+    path = "../Assets/Config/" + fileName
     try:
         with open(path, 'r') as file:
             data = json.load(file)

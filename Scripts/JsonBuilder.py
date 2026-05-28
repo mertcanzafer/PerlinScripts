@@ -2,7 +2,7 @@ import json
 import sys
 
 def DeserializeJsonFile(fileName):
-    path = "files/" + fileName
+    path = "../Assets/Config/" + fileName
     try:
         with open(path, 'r') as file:
             data = json.load(file)
@@ -39,7 +39,7 @@ else:
                 "name": t
             })
 
-res = SerializeJsonFile("textures.json",dstData)
+res = SerializeJsonFile(dstFile,dstData)
 
 if(res is None):
     print("Error occured")
