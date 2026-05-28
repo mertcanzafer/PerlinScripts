@@ -12,7 +12,7 @@ def DeserializeJsonFile(fileName):
         return None
     
 def SerializeJsonFile(fileName, data):
-    path = "files/" + fileName
+    path = "../Assets/Config/" + fileName
     try:
         jsonStr = json.dumps(data,indent=4)
         with open(path, 'w') as file:
